@@ -331,7 +331,7 @@ def move_all_to_cart(request):
 
         # Remove the product from the wishlist
         wishlist_item.delete()
-    user_cart.save()
+        user_cart.save()
 
     return wishlist_view(request)  # Redirect to the wishlist page
 
